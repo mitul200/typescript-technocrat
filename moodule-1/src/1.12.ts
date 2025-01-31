@@ -7,7 +7,7 @@
     }
   };
 
-  searchName(null);
+  searchName("null");
 
   const getSpeedInMeterPerSecond = (value: unknown) => {
     if (typeof value === "number") {
