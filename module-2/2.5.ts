@@ -30,4 +30,26 @@
     "bangladesh",
     124
   );
+
+  interface Users {
+    id: number;
+    email: string;
+    devices: string;
+  }
+
+  // Generic Function
+  const studentOfPHGeneric = <T>(learners: T) => {
+    const course = "Next Level Learners";
+    return {
+      ...learners,
+      course,
+    };
+  };
+
+  // Calling the function with Users type
+  const learnersDetails = studentOfPHGeneric({
+    id: 1,
+    email: "mitul#5267@gmail.com",
+    devices: "PC Windows 10",
+  });
 }
